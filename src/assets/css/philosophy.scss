@@ -1,0 +1,53 @@
+.philosophy{
+   
+        background-color: #7bb0e7;
+        background-image: linear-gradient(to bottom right,#3edbac,#16a6e8);
+        padding: 140px 0;
+        position: relative;
+    
+    &__caption{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: baseline;
+h2{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 77px;
+}
+a{
+   
+        background-color: transparent;
+        border: 3px solid #fff;
+        height: 54px;
+        line-height: 50px;
+        padding: 0 30px;
+        color: #fff;
+        display: inline-block;
+        transition: .3s;
+        border-radius: 3px;
+        &:hover{
+            opacity: .7;
+        }
+    
+}
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        right: 0;
+        left: 0;
+        bottom: -72px;
+        transform: skewY(-6deg);
+        height: 160px;
+        z-index: 2;
+    }
+}

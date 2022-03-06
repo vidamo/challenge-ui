@@ -1,0 +1,138 @@
+.services{
+        $self:&;
+    
+        background-color: #00ccc4;
+        background-repeat: no-repeat;
+        background-image: url(https://kriesi.at/themes/enfold-one-page-agency/wp-content/uploads/sites/83/2018/10/hero-pattern.png), linear-gradient(45deg,#00ccc4,#69b2e8);
+        background-attachment: scroll;
+        background-position: center center;
+        margin-top: -54px;
+        padding-top: 138px;
+        position: relative;
+        padding-bottom: 195px;
+        &::after{
+       
+                content: "";
+                position: absolute;
+                background-color: #fff;
+                right: 0;
+                left: 0;
+                bottom: -72px;
+                transform: skewY(-6deg);
+                height: 160px;
+                z-index: 2;
+              
+            }
+
+        &__content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transform: rotateY(0deg);
+                transition: transform .6s ;
+                perspective: 1000px;
+                transform-style: preserve-3d;
+               
+               
+               
+                i{
+                        color: #fff;
+                        font-size: 30px;
+                        margin-bottom: 21px;
+                }
+                h2{
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-bottom: 13px;
+                        text-shadow: 1px 2px 2px rgba(255,255,255,.7);
+                }
+                span{
+                        color: rgba(255,255,255,0.49);
+                        font-weight: 500;
+                        text-shadow: 1px 1px 2px rgba(255,255,255,.7);
+                }
+        }
+        &__hover{
+                opacity: 0;
+                visibility: hidden;
+                display: none;
+                transform: rotateY(-180deg);
+                transition: transform 0.6s; 
+              
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                perspective: 1000px;
+                transform-style: preserve-3d;
+                p{
+                     color: #fff;
+                     font-size: 15px;   
+                    text-align: center;
+                }
+        }
+        &__post{
+                height: 267px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                cursor: pointer;
+               
+                &:before {
+                       content: "";
+                       position: absolute;
+                       width: 100%;
+                       height: 100%;
+                       top: 0;
+                       left: 0;
+                       color: inherit;
+                       z-index: 2;
+                       box-shadow: 1px 0 0 0 #b0b0b0,0 1px 0 0 #b0b0b0;
+                      
+                    }
+                &:hover{
+                        #{$self}__hover{
+                                opacity: 1;
+                                visibility: visible;
+                                display: block;
+                                transform: rotateY(0deg);
+                               
+                   
+                        }
+                        #{$self}__content{
+                                opacity: 0;
+                                visibility: hidden;
+                                transform: rotateY(-180deg);
+                                transition: .6s;
+                               
+                        }
+
+                }
+                &--latest{
+                        &:before {
+                                content: "";
+                                position: absolute;
+                                width: 1px;
+                               bottom: 0;
+                                color: inherit;
+                                z-index: 2;
+                                box-shadow: 1px 0 0 0 #b0b0b0,0 1px 0 0 #b0b0b0;
+
+                               
+                               
+                               
+                             }
+                }
+        }
+        &--aft{
+                &::before{
+                        display: none;
+                }
+        }
+      
+      
+       
+    
+}

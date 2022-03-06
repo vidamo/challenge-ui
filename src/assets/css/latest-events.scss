@@ -1,0 +1,52 @@
+.latest-events{
+    $self:&;
+    &__list-hover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9;
+        pointer-events: none;
+        transition: .3s;
+        h2{
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        p{
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+        }
+       
+    }
+    &__list-item {
+        transition: .3s;
+        overflow: hidden;
+        img{
+            filter: grayscale(100%);
+            transition: .3s;
+        }
+        a{
+            position: relative;
+        }
+        &:hover{
+            #{$self}__list-hover{
+                opacity: 1;
+                visibility: visible;
+            }
+            img{
+                filter: grayscale(0);
+                transform: scale(1.1);
+            }
+
+        }
+    }
+}

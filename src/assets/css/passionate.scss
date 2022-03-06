@@ -1,0 +1,76 @@
+.passionate{
+   
+   &__post{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding: 99px 45px 46px;
+        background: #ffffff;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.18);
+        padding: 40px;
+        background-color: #ffffff;
+        max-height: 437px;
+        position: relative;
+        z-index: 2;
+       
+
+       h2{
+           font-size: 24px;
+           font-weight: 500;
+           text-align: center;
+           margin-bottom: 34px;
+       }
+       p{
+          text-align: center;
+          color: #b0b0b0;
+          margin-bottom: 67px;
+          font-size: 15px;
+       }
+       a{
+      
+            background-color: #45c0d6;
+            border-color: #45c0d6;
+            color: #ffffff;
+            border-radius: 3px;
+            padding:0 30px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 12px;
+            display: inline-block;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+
+            transition: .3s;
+            &:hover{
+                opacity: .7;
+            }
+            
+       }
+       &--center{
+    
+            background-color: #7bb0e7;
+            background: linear-gradient(to bottom right,#7bb0e7,#4ecac2);
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.18);
+            transform: scale(1.1);
+            z-index: 9;
+            padding: 40px;
+            border-radius: 0px;
+            position: relative;
+            h2{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+            a{
+                background-color: transparent;
+                border: 3px solid #fff;
+                height: 54px;
+                line-height: 50px;
+                padding: 0 30px;
+            }
+        
+       }
+   }
+}

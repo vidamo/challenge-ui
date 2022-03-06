@@ -1,0 +1,60 @@
+.action{
+   
+        background-color: #7bb0e7;
+        background-repeat: no-repeat;
+        background-image: url(https://kriesi.at/themes/enfold-one-page-agency/wp-content/uploads/sites/83/2018/10/hero-pattern.png), linear-gradient(to bottom right,#89bb30,#4dc4fb);
+        background-attachment: scroll;
+        background-position: center center;
+        padding: 127px 0 200px;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            background-color: #fff;
+            right: 0;
+            left: 0;
+            bottom: -72px;
+          
+            transform: skewY(-6deg);
+            height: 160px;
+            z-index: 2;
+        }
+        &__caption{
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            h2{
+                font-size: 3em;
+                color: #fff;
+                margin-bottom: 36px;
+            }
+            P{
+                color: #fff;
+                font-size: 23px;
+                margin-bottom: 26px;
+            }
+            a{
+               
+                    background-color: transparent;
+                    border: 3px solid #fff;
+                    height: 54px;
+                    line-height: 50px;
+                    padding: 0 30px;
+                    color: #fff;
+                    display: inline-block;
+                    transition: 0.3s;
+                    border-radius: 3px;
+                    &:hover{
+                        opacity: .7;
+                    }
+                
+            }
+        }
+        &__video{
+            video{
+                width: 100%;
+            }
+        }
+      
+    
+}

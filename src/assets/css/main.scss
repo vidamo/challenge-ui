@@ -1,0 +1,86 @@
+@keyframes arrow{
+    0%{
+        bottom: 47px;
+        opacity: 1;
+    }
+    50%{
+        bottom: 0;
+        opacity: .5;
+    }
+    100%{
+        bottom: 0;
+        opacity: .2;
+    }
+}
+.main{
+    
+    background-color: #7bb0e7;
+    background-repeat: no-repeat;
+    background-image: url(https://kriesi.at/themes/enfold-one-page-agency/wp-content/uploads/sites/83/2018/10/hero-pattern.png), linear-gradient(to bottom right,#5a72fc,#fb4d4d);
+    background-position: center center;
+    height: 580px;
+    margin-bottom: 119px;
+    position: relative;
+   
+&__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        h3{
+            color:#fff ;
+            font-size: 3em;
+            position: relative;
+            margin-bottom: 63px;
+            &:after{
+                content: '';
+                position: absolute;
+                height: 1px;
+                right:44%;
+                left:44%;
+                bottom: -36px;
+              background-color: #fff;
+             
+            
+            }
+        }
+        p{
+         color: #fff;
+         font-size: 17px;
+        }
+    }
+    &__arrow-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+    
+                color: #fb4d4d;
+                font-size: 25px;
+                position: absolute;
+                bottom: 47px;
+                z-index: 9;
+                cursor: pointer;
+                font-weight: 900;
+                animation: arrow 4s  infinite ;
+            
+
+        }
+    }
+    position: relative;
+    &::after{
+       
+            content: "";
+            position: absolute;
+            background-color: #fff;
+            right: 0;
+            left: 0;
+            bottom: -72px;
+            transform: skewY(-6deg);
+            height: 160px;
+          
+        }
+    }
+  
+    
+
+    

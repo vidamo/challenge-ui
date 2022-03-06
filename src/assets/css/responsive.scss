@@ -1,0 +1,209 @@
+@media (max-width: 1200px) {
+  .mega-menu-site-responsive {
+    display: flex;
+  }
+  .mega-menu-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px 0;
+
+    i {
+      &:last-of-type {
+        font-size: 12px;
+      }
+    }
+  }
+  .side-main {
+    &__menu {
+      display: none;
+    }
+
+    &__social {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .prof-content {
+    margin-bottom: 15px;
+
+    &__about-me {
+      padding-top: 0;
+
+      h1 {
+        margin-bottom: 12px;
+      }
+    }
+
+  }
+  .my-activites {
+    padding-left: 18px;
+
+    h2 {
+      margin-bottom: 26px;
+    }
+
+    &__item {
+      margin-bottom: 15px;
+    }
+  }
+  .portfolio {
+    &__head {
+      margin-bottom: 19px;
+    }
+  }
+  .portfolio-cat {
+    &__content {
+      padding-top: 0;
+    }
+  }
+  .single-content {
+    padding-top: 0;
+
+    &__pic {
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      padding-left: 0;
+
+      h1 {
+        margin-bottom: 27px;
+      }
+
+      h2 {
+        padding-left: 0;
+      }
+
+      p {
+        padding-left: 0;
+      }
+    }
+
+    &__blur {
+      left: 17px;
+      right: 17px;
+    }
+
+    .icon-html5 {
+      font-size: 25px;
+      margin-bottom: 20px;
+      text-align: center;
+      display: block;
+    }
+
+    .icon-css {
+      font-size: 25px;
+      margin-bottom: 20px;
+      text-align: center;
+      display: block;
+    }
+
+    .icon-javascript {
+      font-size: 25px;
+      margin-bottom: 20px;
+      text-align: center;
+      display: block;
+    }
+
+    .icon-wordpress {
+      font-size: 25px;
+      margin-bottom: 20px;
+      text-align: center;
+      display: block;
+    }
+
+  }
+  .side-main {
+    padding: 9px 0;
+  }
+  .form{
+    padding: 14px 14px 3px;
+    input{
+      padding: 10px 8px;
+      &::placeholder{
+        font-size: 13px;
+      }
+    }
+    textarea{
+        padding-top: 15px;
+        padding-right: 0;
+      &::placeholder{
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .prof-content {
+    &__about-me {
+      margin-bottom: 18px;
+    }
+  }
+  .my-activites {
+    padding-left: 3px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .prof-content {
+    &__about-me {
+      text-align: center;
+    }
+  }
+
+}
+
+@media (max-width: 449px) {
+  .prof-content {
+    margin: 0 15px 20px;
+
+    &__about-me {
+      padding-top: 0;
+      margin: 0 15px 20px;
+    }
+  }
+  .portfolio-cat {
+    &__content {
+      margin: 0 15px;
+    }
+  }
+  .single-content {
+    margin: 0 15px;
+    .icon-html5 {
+      display: block;
+      text-align: center;
+      font-size: 60px;
+    }
+    .icon-css {
+      display: block;
+      text-align: center;
+      font-size: 60px;
+    }
+    .icon-javascript {
+      display: block;
+      text-align: center;
+      font-size: 60px;
+    }
+    .icon-wordpress {
+      display: block;
+      text-align: center;
+      font-size: 60px;
+    }
+    &__content{
+      h1 {
+        font-size: 18px;
+      }
+    }
+  }
+  .mg-ico {
+    margin-bottom: 30px;
+  }
+  .form{
+    margin: 0 15px;
+    width: auto;
+  }
+}
